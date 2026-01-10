@@ -64,7 +64,7 @@ export default function RootLayout({
               rel="noopener noreferrer"
               className="text-primary-400 hover:text-primary-300"
             >
-              Download here Petra wallet
+              Download here Petra wallet first
             </a>
                   <WalletButton />
                 </div>
