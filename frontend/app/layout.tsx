@@ -58,6 +58,14 @@ export default function RootLayout({
                       </Link>
                     </div>
                   </div>
+                  <a
+              href="https://petra.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-400 hover:text-primary-300"
+            >
+              Download here Petra wallet
+            </a>
                   <WalletButton />
                 </div>
               </div>
@@ -76,14 +84,6 @@ export default function RootLayout({
               </div>
             </footer>
           </div>
-          <a
-              href="https://petra.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-400 hover:text-primary-300"
-            >
-              Download here petra wallet 
-            </a>
         </WalletProvider>
       </body>
     </html>
