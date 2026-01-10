@@ -1,0 +1,16 @@
+[package]
+name = "NFTDonation"
+version = "1.0.0"
+authors = []
+
+[addresses]
+nft_donation = "0xac8c76b769c273ec01aff95b6f02cd1a8578eb43a4681238d13a66f007599254"
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-core.git"
+rev = "mainnet"
+subdir = "aptos-move/framework/aptos-framework"
+
+[dev-addresses]
+
+[dev-dependencies]

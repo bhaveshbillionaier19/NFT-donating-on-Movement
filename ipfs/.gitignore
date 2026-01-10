@@ -1,0 +1,17 @@
+# Environment variables (contains API keys)
+.env
+
+# Node modules
+node_modules/
+
+# Test images and files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+test-*
+
+# Logs
+*.log
+npm-debug.log*

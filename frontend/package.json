@@ -1,0 +1,37 @@
+{
+    "name": "nft-donation-frontend",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@aptos-labs/ts-sdk": "^1.29.0",
+        "@aptos-labs/wallet-adapter-react": "^3.7.1",
+        "@mizuwallet-sdk/core": "^1.4.0",
+        "@pinata/sdk": "^2.1.0",
+        "@telegram-apps/bridge": "^2.11.0",
+        "aptos": "^1.22.1",
+        "dotenv": "^16.4.5",
+        "got": "^14.6.6",
+        "graphql": "^16.12.0",
+        "graphql-request": "^7.4.0",
+        "jwt-decode": "^4.0.0",
+        "next": "^15.1.3",
+        "petra-plugin-wallet-adapter": "^0.4.5",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^22.10.2",
+        "@types/react": "^19.0.6",
+        "@types/react-dom": "^19.0.2",
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.17",
+        "typescript": "^5.7.2"
+    }
+}

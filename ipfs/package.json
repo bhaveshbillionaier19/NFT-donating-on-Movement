@@ -1,0 +1,23 @@
+{
+  "name": "nft-donation-ipfs",
+  "version": "1.0.0",
+  "description": "IPFS utilities for NFT metadata upload using Pinata",
+  "main": "ipfs-uploader.js",
+  "type": "module",
+  "scripts": {
+    "example": "node example.js"
+  },
+  "keywords": [
+    "ipfs",
+    "pinata",
+    "nft",
+    "metadata"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@pinata/sdk": "^2.1.0",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.0"
+  }
+}
