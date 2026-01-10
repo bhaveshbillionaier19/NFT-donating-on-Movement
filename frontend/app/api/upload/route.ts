@@ -3,6 +3,8 @@ import pinataSDK from '@pinata/sdk';
 import { writeFile, unlink } from 'fs/promises';
 import path from 'path';
 
+import os from 'os';
+
 export async function POST(request: NextRequest) {
     try {
         // Validate Pinata credentials before proceeding
@@ -39,7 +41,10 @@ export async function POST(request: NextRequest) {
         const bytes = await image.arrayBuffer();
         const buffer = Buffer.from(bytes);
 
-        const tempDir = path.join(process.cwd(), 'tmp');
+
+
+        // Use system temp directory which is writable in Lambda/Netlify
+        const tempDir = os.tmpdir();
         const tempFilePath = path.join(tempDir, image.name);
 
         // Ensure tmp directory exists
