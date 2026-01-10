@@ -76,6 +76,7 @@ export default function RootLayout({
               </div>
             </footer>
           </div>
+          <p>Please download petra wallet</p>
         </WalletProvider>
       </body>
     </html>
