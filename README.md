@@ -21,7 +21,7 @@ nftdonationonmoveantiG/
 └── DEPLOYMENT.md         # Deployment guide
 ```
 
-## 🚀 Quick Start
+## Start
 
 ### 1. Deploy Smart Contract
 
