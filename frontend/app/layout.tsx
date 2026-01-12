@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   // Set document metadata on client side
   useEffect(() => {
-    document.title = "NFT Donation Platform";
+    document.title = "Loan Funding";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', 'Mint NFTs and accept donations on Movement blockchain');
