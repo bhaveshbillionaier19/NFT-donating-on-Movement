@@ -87,7 +87,7 @@ export default function HomePage() {
         <div className="mt-12 text-center glass p-8 rounded-xl">
           <h3 className="text-2xl font-semibold mb-4">To start</h3>
           <p className="text-gray-400 mb-6">
-            Connect your Petra wallet to mint NFTs and start accepting donations
+            Connect your Petra wallet to mint NFTs and start accepting Loan
           </p>
           <div className="text-sm text-gray-500">
 
