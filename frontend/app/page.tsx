@@ -42,7 +42,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">
-          <span className="gradient-text">NFT Donation Platform</span>
+          <span className="gradient-text">LoanFunding</span>
         </h1>
 
       </div>
