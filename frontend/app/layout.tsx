@@ -22,11 +22,11 @@ export default function RootLayout({
     document.title = "Loan Funding";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Mint NFTs and accept donations on Movement blockchain');
+      metaDescription.setAttribute('content', 'Mint NFTs and accept loans on Movement blockchain');
     } else {
       const meta = document.createElement('meta');
       meta.name = 'description';
-      meta.content = 'Mint NFTs and accept donations on Movement blockchain';
+      meta.content = 'Mint NFTs and accept loans on Movement blockchain';
       document.head.appendChild(meta);
     }
   }, []);

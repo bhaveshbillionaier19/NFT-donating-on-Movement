@@ -112,7 +112,7 @@ export default function MintPage() {
           <span className="gradient-text">Mint Your NFT</span>
         </h1>
         <p className="text-gray-400">
-          Create a unique NFT that can accept donations on the Movement blockchain
+          Create a unique NFT that can accept loans on the Movement blockchain
         </p>
       </div>
 
@@ -226,7 +226,7 @@ export default function MintPage() {
           <li>1. Upload your NFT image and add details</li>
           <li>2. Image and metadata are uploaded to IPFS</li>
           <li>3. NFT is minted on Movement blockchain</li>
-          <li>4. Your NFT can now accept donations!</li>
+          <li>4. Your NFT can now accept loans!</li>
         </ol>
       </div>
     </div>

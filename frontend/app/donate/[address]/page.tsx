@@ -75,27 +75,27 @@ export default function DonatePage() {
 
       setStatus('Waiting for wallet approval...');
 
-      // Build and submit donation transaction
+      // Build and submit loan transaction
       const transaction = buildDonateTransaction(nftOwner, nft.id, amountInOctas);
       const response = await signAndSubmitTransaction(transaction);
 
-      setStatus('Processing donation...');
+      setStatus('Processing loan...');
 
       // Wait for transaction confirmation
       await new Promise(resolve => setTimeout(resolve, 2000));
 
-      setStatus(`Successfully donated ${donationAmount} APT! 🎉`);
+      setStatus(`Successfully lent ${donationAmount} APT! 🎉`);
       setAmount('');
 
-      // Reload NFT data to show updated donations
+      // Reload NFT data to show updated loans
       setTimeout(() => {
         loadNFT();
         setStatus('');
       }, 3000);
 
     } catch (err: any) {
-      console.error('Donation error:', err);
-      setError(err.message || 'Failed to process donation');
+      console.error('Loan error:', err);
+      setError(err.message || 'Failed to process loan');
       setStatus('');
     } finally {
       setDonating(false);
@@ -163,21 +163,21 @@ export default function DonatePage() {
           <p className="text-gray-400 mb-6">{desc}</p>
 
           <div className="glass p-4 rounded-lg">
-            <div className="text-sm text-gray-400 mb-1">Total Donations</div>
+            <div className="text-sm text-gray-400 mb-1">Total Loans</div>
             <div className="text-3xl font-bold gradient-text">
               {octasToApt(nft.totalDonations).toFixed(4)} APT
             </div>
           </div>
         </div>
 
-        {/* Donation Form */}
+        {/* Loan Form */}
         <div className="glass p-8 rounded-xl">
           <h2 className="text-2xl font-bold mb-6">Support This NFT</h2>
 
           <form onSubmit={handleDonate} className="space-y-6">
             <div>
               <label htmlFor="amount" className="block text-sm font-semibold mb-2">
-                Donation Amount (APT)
+                Loan Amount (APT)
               </label>
               <input
                 type="number"
@@ -233,14 +233,14 @@ export default function DonatePage() {
               disabled={donating || !account}
               className="w-full py-4 bg-gradient-primary hover:opacity-90 text-white font-semibold rounded-lg transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {donating ? 'Processing...' : account ? 'Donate Now' : 'Connect Wallet First'}
+              {donating ? 'Processing...' : account ? 'Lend Now' : 'Connect Wallet First'}
             </button>
           </form>
 
           {/* Info */}
           <div className="mt-6 p-4 bg-dark-800/50 rounded-lg">
             {/* <p className="text-sm text-gray-400">
-              All donations are processed on-chain and directly sent to the NFT owner.
+              All loans are processed on-chain and directly sent to the NFT owner.
               Transaction fees apply.
             </p> */}
           </div>

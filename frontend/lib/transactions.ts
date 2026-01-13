@@ -15,7 +15,7 @@ export function buildMintTransaction(metadataURI: string): InputTransactionData 
 }
 
 /**
- * Build transaction payload for donating to an NFT
+ * Build transaction payload for lending to an NFT
  */
 export function buildDonateTransaction(
     nftOwner: string,

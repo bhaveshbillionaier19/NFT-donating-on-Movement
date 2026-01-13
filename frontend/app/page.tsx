@@ -59,7 +59,7 @@ export default function HomePage() {
           <div className="text-3xl font-bold gradient-text mb-2">
             {nfts.reduce((sum, nft) => sum + nft.totalDonations, 0) / 100_000_000}
           </div>
-          <div className="text-gray-400">Total Loan (APT)</div>
+          <div className="text-gray-400">Total Loans (APT)</div>
         </div>
         <div className="glass p-6 rounded-xl text-center">
           <div className="text-3xl font-bold gradient-text mb-2">Move</div>
@@ -87,7 +87,7 @@ export default function HomePage() {
         <div className="mt-12 text-center glass p-8 rounded-xl">
           <h3 className="text-2xl font-semibold mb-4">To start</h3>
           <p className="text-gray-400 mb-6">
-            Connect your Petra wallet to mint NFTs and start accepting Loan
+            Connect your Petra wallet to mint NFTs and start accepting loans
           </p>
           <div className="text-sm text-gray-500">
 

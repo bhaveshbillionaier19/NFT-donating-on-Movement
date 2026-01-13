@@ -34,14 +34,14 @@ export default function NFTCard({ nft }: NFTCardProps) {
           </h3>
 
           <div className="flex items-center justify-between">
-            <span className="text-sm text-gray-400">Total Donations</span>
+            <span className="text-sm text-gray-400">Total Loans</span>
             <span className="text-lg font-bold gradient-text">
               {donationsInApt.toFixed(4)} APT
             </span>
           </div>
 
           <button className="mt-4 w-full py-2 bg-gradient-primary text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity font-semibold">
-            Donate Now
+            Lend Now
           </button>
         </div>
       </div>
